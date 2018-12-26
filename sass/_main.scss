@@ -27,9 +27,39 @@
         border-radius: .2rem;
         cursor: pointer;
         transition: all .1s;
+        line-height: 120%;
 
         &:hover{
             background-color: $color-red;
+        }
+    }
+    &__answer{
+        transform: translateY(3rem);
+        font-size: 2.5rem;
+    }
+
+    #game {
+        font-size: 3.2rem;
+        color: $color-red;
+    }
+    #score{
+        font-size: 3rem;
+        color: $color-blue;
+    }
+
+    #restart {
+        border: none;
+        background-color: $color-black;
+        color: #efefef;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border-radius: .2rem;
+        cursor: pointer;
+        transition: all .1s;
+        line-height: 120%;
+
+        &:hover{
+            background-color: $color-black;
         }
     }
 }
