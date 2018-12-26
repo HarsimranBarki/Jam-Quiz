@@ -1,0 +1,21 @@
+@import "normalize";
+@import "variables";
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+body {
+    font-size: inherit;
+    box-sizing: inherit;
+    font-family: inherit;
+    background: #efefef;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+@import "header";
+@import "main";

@@ -1,0 +1,35 @@
+.main {
+    transform: translateY(10rem);
+    display: block;
+    margin: 0 auto;
+    width: 80rem;
+    text-align: center;
+
+    &__question {
+       border-bottom: .2rem solid $color-red;
+       padding: 2rem 2rem;
+       color: $color-black;
+       font-size: 3.2rem;
+    }
+
+    &__options{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 2rem;
+    }
+
+    &__button{
+        border: none;
+        background-color: $color-blue;
+        color: #efefef;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border-radius: .2rem;
+        cursor: pointer;
+        transition: all .1s;
+
+        &:hover{
+            background-color: $color-red;
+        }
+    }
+}
