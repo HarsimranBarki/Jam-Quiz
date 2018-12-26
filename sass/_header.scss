@@ -1,13 +1,35 @@
 .header {
-    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+   
     &__heading{
         font-family: $display;
         font-size: 6rem;
         color: $color-red;
         margin-bottom: -.5rem;
+
+        @media screen and (max-width:750px) {
+       font-size: 5rem;
+       text-align: center;
+        }
+
     }
     &__text{
         font-size: 1.5rem;
         letter-spacing: .2rem;
+        @media screen and (max-width:750px) {
+            font-size: 1.3rem;
+            text-align: center;
+             }
     }
+}
+
+.container{
+    position: relative;
+    height: 25vh;
+    width: 100vw;
 }

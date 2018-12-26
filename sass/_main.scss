@@ -1,21 +1,49 @@
 .main {
     transform: translateY(10rem);
-    display: block;
     margin: 0 auto;
-    width: 80rem;
     text-align: center;
+    width: 60%;
+
+    @media screen and (max-width:1150px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width:900px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width:750px) {
+        transform: translateY(6rem);
+    }
+    @media screen and (max-width:650px) {
+        transform: translateY(3rem);
+         }
 
     &__question {
        border-bottom: .2rem solid $color-red;
        padding: 2rem 2rem;
        color: $color-black;
        font-size: 3.2rem;
+
+       @media screen and (max-width:750px) {
+        font-size: 3rem;
+         }
     }
 
     &__options{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-column-gap: 2rem;
+
+        @media screen and (max-width:900px) {
+            grid-template-columns: repeat(2,30rem);
+            justify-content: center;
+            grid-row-gap: 2rem;
+        }
+        @media screen and (max-width:650px) {
+            grid-template-columns: repeat(1,30rem);
+            grid-row-gap: 1.5rem;
+             }
     }
 
     &__button{
@@ -29,6 +57,10 @@
         transition: all .1s;
         line-height: 120%;
 
+        @media screen and (max-width:750px) {
+            font-size: 1.3rem;
+             }
+
         &:hover{
             background-color: $color-red;
         }
@@ -36,6 +68,7 @@
     &__answer{
         transform: translateY(3rem);
         font-size: 2.5rem;
+
     }
 
     #game {
